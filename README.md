@@ -2,7 +2,6 @@
 
 `dynogen` is a tool to create and manage Dynamodb tables locally and on aws.
 
------
 
 ## How to install
 
@@ -13,6 +12,8 @@ Check if installation was successful by running:
 `dynogen --version`
 
 If you see a version number then the installation was successful.
+
+Follow this [link](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.DownloadingAndRunning.html) to setup a local instance of DynamoDb.
 
 ------
 
