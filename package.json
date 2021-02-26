@@ -10,7 +10,8 @@
     "type": "git",
     "url": "https://github.com/akshbn/dynogen.git"
   },
-  "author": "Akshay",
+  "homepage": "https://github.com/akshbn/dynogen#readme",
+  "author": "Akshay B N",
   "license": "MIT",
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.6.1",
