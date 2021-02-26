@@ -1,0 +1,21 @@
+{
+  "name": "dynogen",
+  "version": "1.0.0",
+  "description": "A tool to easily create and manage DynamoDb tables be it locally or on AWS.",
+  "bin": {
+    "dynogen": "./bin/dynogen.js",
+    "dg": "./bin/dynogen.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akshbn/dynogen.git"
+  },
+  "author": "Akshay",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.6.1",
+    "emojic": "^1.1.16",
+    "esm": "^3.2.25",
+    "yargs": "^16.2.0"
+  }
+}
