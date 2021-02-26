@@ -11,6 +11,7 @@
     "url": "https://github.com/akshbn/dynogen.git"
   },
   "homepage": "https://github.com/akshbn/dynogen#readme",
+  "keywords": ["dynamo", "dynamodb", "cli", "aws"],
   "author": "Akshay B N",
   "license": "MIT",
   "dependencies": {
