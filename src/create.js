@@ -16,6 +16,10 @@ const builder = {
     alias: "r",
     default: "us-east-1",
   },
+  profile: {
+    describe: "Use the given profile info when executing commands",
+    alias: "P"
+  }
 };
 
 const handler = async (argv) => {
@@ -24,6 +28,10 @@ const handler = async (argv) => {
       let err = new Error();
       err.name = "InvalidAwsRegion";
       throw err;
+    }
+
+    if(argv.profile) {
+      process.env.AWS_PROFILE = argv.profile;
     }
 
     let client;
@@ -37,6 +45,7 @@ const handler = async (argv) => {
     let tableConfig = fs.readFileSync(argv.path).toString();
     let config = JSON.parse(tableConfig);
 
+    display(`${emoji.informationSource} Creating table in region ${argv.region}`);
     let resp = await client.send(new CreateTableCommand(config));
     display(`${emoji.whiteCheckMark} Table created. See the details below`);
     console.log(resp);
