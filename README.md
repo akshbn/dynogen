@@ -21,8 +21,6 @@ Follow this [link](https://docs.aws.amazon.com/amazondynamodb/latest/developergu
 
 `dynogen` offers a shorthand alias `dg`. You can use this interchangably in any of the below commands.
 
-**Note**: Currently dynogen uses the default profile present in ~/.aws/credentials file.
-
 ### Run
 
 `dynogen run <path to directory of local dynamodb installation>`
@@ -45,6 +43,12 @@ In order to change region pass it along with `-r` flag.
 If you want to create a table in the local dynamodb instance use `-l` flag.
 
 Example: `dynogen create <path to table config> -l`
+
+**AWS Profile** present in `~/.aws/credentials` file can be used by passing it with the `-P` flag.
+
+Example:
+
+`dynogen create <path to table config> -P work-account`
 
 ----
 
